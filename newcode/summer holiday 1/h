@@ -1,0 +1,47 @@
+#include<cstring>
+#include<cstdio>
+#include<iostream>
+#include<stack>
+#include<cmath>
+using namespace std;
+struct N{
+	string s;
+	int num;
+	int tim;
+};N a[100005],b[100005];
+int n,m;
+int nnum,ntim;
+int na,nb;
+int main()
+{
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++)
+	{
+		cin>>a[i].s;
+		cin>>a[i].num>>a[i].tim;
+		if(a[i].s=="lzr010506"){
+			nnum=num;
+			ntim=tim;
+		} 
+	}
+	for(int i=1;i<=n;i++)
+	{
+		if(a[i].num>nnum||a[i].num==nnum&&a[i].tim<ntim) na++;
+	}
+	scanf("%d",&n);
+	for(int i=1;i<=n;i++)
+	{
+		cin>>a[i].s;
+		cin>>a[i].num>>a[i].tim;
+		if(a[i].s=="lzr010506"){
+			nnum=num;
+			ntim=tim;
+		} 
+	}
+	for(int i=1;i<=n;i++)
+	{
+		if(a[i].num>nnum||a[i].num==nnum&&a[i].tim<ntim) nb++;
+	}
+	printf("%d\n",min(na,nb));
+	return 0;
+}

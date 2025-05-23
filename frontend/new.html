@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duziks's Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="path_to_your_image.jpg" alt="Apple Style Image">
+        <h1>Duziks's Site</h1>
+        <p>欢迎来到我的网站</p>
+        <div class="count-display">点击次数: <span id="count">0</span></div>
+        <button class="count-button" onclick="incrementCount()">点击我</button>
+        <div>
+            <h2>小标题</h2>
+            <p>这里是一些其他信息</p>
+        </div>
+    </div>
+
+    <script>
+        let count = 0;
+        function incrementCount() {
+            count++;
+            document.getElementById('count').textContent = count;
+        }
+    </script>
+</body>
+</html>
